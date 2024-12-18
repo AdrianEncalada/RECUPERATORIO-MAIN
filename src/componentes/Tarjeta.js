@@ -1,3 +1,5 @@
+import Item from "./Item";
+
 const listadoPlataformas = ["Twitter", "Facebook", "Youtube"];
 
 // CONSIGNAS EN TARJETA:
@@ -14,7 +16,7 @@ const listadoPlataformas = ["Twitter", "Facebook", "Youtube"];
 export default function Tarjeta(props) {
   return (
     <ul>
-      {/* 🚩 Implementar acá */}
+      <Item listadoPlataformas={[...listadoPlataformas]} handleFavorita={props.handleFavorita}/>
     </ul>
   );
 }

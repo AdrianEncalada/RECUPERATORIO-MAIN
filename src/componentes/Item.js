@@ -9,9 +9,9 @@
 
 export default function Item(props) {
     return (
-      <>
-          // 🚩
-      </>
+      <div>
+          {props.listadoPlataformas.map((option)=><li key={option} onClick={()=>props.handleFavorita(option)}>{option}</li>)}          
+      </div>
     );
   }
   
